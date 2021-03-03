@@ -33,7 +33,7 @@ const AboutCard = () => {
           <p style={{ marginBlockEnd: 0, color: "rgb(155, 126, 172)"}}>
             "If something's important enough, you should try. Even if - the probable outcome is failure"{" "}
           </p>
-          <footer className="blockquote-footer">Calvin</footer>
+          <footer className="blockquote-footer">Elon Musk</footer>
         </blockquote>
       </Card.Body>
     </Card>
