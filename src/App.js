@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import NavBar from './components/NavBar';
 import Home from './components/Home/Home';
 import About from './components/About/About';
+import Project from './components/Projects/Project';
+import Resume from './components/Resume/Resume';
 import Footer from "./components/Footer";
 import Preloader from "./components/Pre";
 import ScrollToTop from "./components/ScrollToTop";
@@ -28,6 +30,8 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/about" exact component={About} />
+            <Route path="/project" exact component={Project} />
+            <Route path="/resume" exact component={Resume} />
           </Switch>
           <Footer />
           </div>
