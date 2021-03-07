@@ -1,4 +1,3 @@
-
 import React from "react";
 
 function ResumeContent(props) {
@@ -11,9 +10,9 @@ function ResumeContent(props) {
         <em>{props.date}</em>
       </p>
       <ul>
-        {props.content.map((value, index) => (
-          <li key={index}> ‣ {value}</li>
-        ))}
+        {props.content.map((value, index) => {
+          return (<li key={index}>{value}</li>)
+        })}
       </ul>
     </div>
   );

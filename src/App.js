@@ -1,42 +1,40 @@
-import React, {useState, useEffect} from 'react';
-import NavBar from './components/NavBar';
-import Home from './components/Home/Home';
-import About from './components/About/About';
-import Project from './components/Projects/Project';
-import Resume from './components/Resume/Resume';
+import "./App.css";
+import React, { useState, useEffect } from "react";
+import Preloader from "../src/components/Pre";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
-import Preloader from "./components/Pre";
-import ScrollToTop from "./components/ScrollToTop";
+import Resume from "./components/Resume/Resume";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import './App.css';
-import './style.css';
+import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-  const [load, setLoad] = useState(true);
-
+  const [load, upadateLoad] = useState(true);
   useEffect(() => {
     setTimeout(() => {
-      setLoad(false)
-    }, 1200)
-  }, [])
+      upadateLoad(false);
+    }, 1200);
+  }, []);
+  
   return (
-    <>
-      <Router>
-        <Preloader load={load} />
-        <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <NavBar />
+    <Router>
+      <Preloader load={load} />
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <Navbar />
         <ScrollToTop />
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/about" exact component={About} />
-            <Route path="/project" exact component={Project} />
-            <Route path="/resume" exact component={Resume} />
-          </Switch>
-          <Footer />
-          </div>
-      </Router>
-    </>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/project" component={Projects} />
+          <Route path="/about" component={About} />
+          <Route path="/resume" component={Resume} />
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
