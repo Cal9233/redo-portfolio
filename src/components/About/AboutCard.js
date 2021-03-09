@@ -30,9 +30,9 @@ function AboutCard() {
           </ul>
 
           <p style={{ marginBlockEnd: 0, color: "#c08888"}}>
-            "If something's important enough, you should try. Even if - the probable outcome is failure"{" "}
+            "I fear living a life where I could have accomplished something and didn't. That's what I fear. I don't fear death."{" "}
           </p>
-          <footer className="blockquote-footer">Elon Musk</footer>
+          <footer className="blockquote-footer">Neil degrasse Tyson</footer>
         </blockquote>
       </Card.Body>
     </Card>
