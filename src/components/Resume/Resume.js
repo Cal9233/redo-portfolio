@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
 import Resumecontent from "./ResumeContent";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,7 +12,6 @@ function Resume() {
 
     return (
       <Container fluid className="resume-section">
-      <Particle />
       <Container>
         <Row className="resume">
           <Col md={6} className="resume-left">
