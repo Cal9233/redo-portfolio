@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
+import Contact from "../Contact/Contact";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Tilt from "react-parallax-tilt";
@@ -48,6 +49,7 @@ function Home2() {
             </Tilt>
           </Col>
         </Row>
+      <Contact />
         <Row>
           <Col md={12} className="home-about-social">
             <h1>These are my socials</h1>

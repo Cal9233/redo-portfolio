@@ -4,9 +4,5 @@ body {
   font-family: "Raleway", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(
-    to left,
-    rgb(164, 191, 239),
-    rgb(106, 147, 203)
-  );
+  background-image: linear-gradient(to left, rgb(2, 52, 89), rgb(30, 100, 110));
 }
