@@ -53,18 +53,18 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #501919;
+  background: #002c2f;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(216, 121, 121, 0.959);
+  background: rgba(0, 44, 47, 0.959);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(235, 130, 130, 0.911);
+  background: rgba(178, 165, 159, 0.911);
   border-radius: 12px;
 }
 
@@ -74,7 +74,7 @@ html {
 .sticky {
   background-color: #212038d8 !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px rgba(0, 44, 47, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -94,7 +94,7 @@ html {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #f07070 !important;
+  background-color: rgb(178, 165, 159) !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -141,7 +141,7 @@ html {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #271818 !important;
+    background-color: rgb(178, 165, 159) !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -191,7 +191,7 @@ html {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #f07070;
+  background: rgb(178, 165, 159);
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -254,6 +254,10 @@ html {
 .home-section {
   position: relative;
   z-index: -1;
+  background-image: var(--image-gradient), url(./Assets/back-vv.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
@@ -275,17 +279,17 @@ html {
 }
 
 .main-name {
-  color: #f07070;
+  color: #b2a59f;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #f07070 !important;
+  color: #b2a59f !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #f07070 !important;
+  color: #b2a59f !important;
 }
 
 @media (max-width: 767px) {
@@ -365,7 +369,7 @@ html {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #7a1818;
+  background: #b2a59f;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -373,46 +377,42 @@ html {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #951f1f;
+  box-shadow: 0 0 15px #b2a59f;
 }
 
 .home-social-icons:hover {
-  color: #9e2020;
-  box-shadow: 0 0 5px #9e2020;
-  text-shadow: 0 0 2px #9e2020;
+  color: #b2a59f;
+  box-shadow: 0 0 5px #b2a59f;
+  text-shadow: 0 0 2px #b2a59f;
 }
 
 .contact-section {
   padding-top: 180px;
-  border: 1px solid blue;
   display: flex;
   flex-wrap: wrap;
-}
-
-.contact-section .contact-img {
-  /* flex-basis: calc(50% - 20px); */
-  flex-grow: 1;
+  padding-bottom: 100px;
 }
 
 .contact-form {
-  border: 1px solid red;
-  /* display: inline-block; */
   flex: 1;
+  color: white !important;
 }
 
 .contact-img {
-  border: 1px solid green;
   display: block;
-
-  min-width: 380px;
+  width: 530px;
+  height: 395px;
+  /* width: auto;
+  height: auto; */
+  padding-top: 60px;
 }
 
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
   .contact-img {
     padding-top: 2em !important;
     padding-bottom: 2em !important;
   }
-} */
+}
 
 .social-icons {
   display: inline-block !important;
@@ -506,24 +506,24 @@ html {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #f07070 !important;
-  border-color: #f07070 !important;
+  background-color: #b2a59f !important;
+  border-color: #b2a59f !important;
 }
 
 .btn-outline-primary {
   color: #fff !important;
-  border-color: #f07070 !important;
+  border-color: #b2a59f !important;
 }
 
 .btn-outline-primary:hover {
   color: #fff !important;
-  background-color: #f07070 !important;
+  background-color: #b2a59f !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #fe0000 !important;
-  border-color: #fe0000 !important;
+  background-color: #3c3735 !important;
+  border-color: #3c3735 !important;
 }
 .btn:focus {
   outline: none !important;
@@ -552,7 +552,7 @@ html {
   font-size: 4.5em !important;
   margin: 15px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(230, 137, 137, 0.637) !important;
+  border: 1.7px solid rgba(0, 44, 47, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
@@ -571,7 +571,7 @@ html {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(230, 115, 115, 0.883) !important;
+  border: 2.2px solid rgba(0, 44, 47, 0.883) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -640,14 +640,14 @@ html {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #a84949;
+  border-left: 2px solid #002c2f;
   position: relative;
 }
 
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: #7934345d;
+  background: #3834795d;
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
@@ -677,5 +677,5 @@ html {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #a84949;
+  border: 2px solid #002c2f;
 }

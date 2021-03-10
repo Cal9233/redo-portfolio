@@ -9,8 +9,8 @@ function AboutCard() {
       <Card.Body>
       <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hey Everyone, I am <span className="red"> Calvin Malagon</span> 
-            from <span className="blue">Florida, USA</span>
+            Hey Everyone, I am <span className="red"> Calvin Malagon </span> 
+            from  <span className="red">Florida, USA</span>
             <br /> I am a Junior FullStack Developer who's on the road to becoming one of the most memorable programmer <strong className="blue">EVER</strong>
             <br />
             <br />
@@ -30,7 +30,7 @@ function AboutCard() {
           </ul>
 
           <p style={{ marginBlockEnd: 0, color: "#c08888"}}>
-            "I fear living a life where I could have accomplished something and didn't. That's what I fear. I don't fear death."{" "}
+            "I fear living a life where I could have accomplished something and didn't."{" "}
           </p>
           <footer className="blockquote-footer">Neil degrasse Tyson</footer>
         </blockquote>
