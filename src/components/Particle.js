@@ -3,6 +3,7 @@ import Particles from "react-particles-js";
 
 function Particle() {
   return (
+    <div id="particles-js">
     <Particles
       params={{
         particles: {
@@ -48,6 +49,7 @@ function Particle() {
         retina_detect: true,
       }}
     />
+    </div>
   );
 }
 
