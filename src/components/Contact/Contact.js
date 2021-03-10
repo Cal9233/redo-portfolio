@@ -60,18 +60,15 @@ const Contact = () => {
                   <Form.Label>Message</Form.Label>
                     <Form.Control type="message" placeholder="Message" name="message" rows="3" />
                 </Form.Group>
-                <Button variant="primary" type="submit">
-                  Submit
+                <Button variant="primary" type="submit" >
+                  Submit 
                   </Button>
             </Form>
         </Col>
-      </Row>
-        <Row>
-          <Col md={2} >
+        <Col md={2} >
             <img src={mail} alt="mail pic" className="contact-img" />
           </Col>
-        </Row>
-      
+      </Row>
     </Container>
    </Container>
    </>

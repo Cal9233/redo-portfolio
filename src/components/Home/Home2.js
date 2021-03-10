@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/me.png";
 import Contact from "../Contact/Contact";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,34 +13,29 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              Allow me to <span className="red"> introduce </span> myself
+             I am a junior-level <span className="red"> Fullstack Engineer </span> looking to excel and become an asset to a 
+            company that is fast-paced giving opportunity for growth.
             </h1>
             <p className="home-about-body">
-            Programming has found a way for me to apply my creative side onto my logical side.
+            A creative developer ​
+            dedicated to building and optimizing the performance of user-centric, development 
+            operations, high-impact websites for nationwide, and global companies.
               <br />
-              <br />I am fluent in classics like
+              <br />Leverage technical,
               <i>
-                <b className="red"> Wordpress, Flutter and Javascript Frameworks. </b>
+                <b className="red"> analytical and problem-solving skills </b>
               </i>
               <br />
               <br />
-              My current focus is on &nbsp;
+              to create dynamic apps and  &nbsp;
               <i>
                 <b className="red">
-                  Data Analytics and Object-Oriented Programming.
+                platforms fueling competitive 
+             advantage and revenue growth.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with
-              <i>
-                <b className="red"> Modern Javascript Frameworks</b>
-              </i>
-                &nbsp; like
-              <i>
-                <b className="red"> Node.js and React.js</b>
-              </i>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
