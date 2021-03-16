@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+import image from "../../Assets/image.png";
 
 function About() {
   return (
@@ -30,23 +30,20 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <img src={image} alt="about" className="img-fluid" />
           </Col>
         </Row>
         <h1 className="project-heading">
           Professional <strong className="red">Skillset </strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-          <Techstack iconName="devicon-firebase-plain" />
           <Techstack iconName="devicon-flutter-plain" />
           <Techstack iconName="devicon-html5-plain" />
           <Techstack iconName="devicon-css3-plain" />
-          <Techstack iconName="devicon-javascript-plain " />
-          <Techstack iconName="devicon-nodejs-plain-wordmark " />
+          <Techstack iconName="devicon-javascript-plain" />
+          <Techstack iconName="devicon-nodejs-plain-wordmark" />
           <Techstack iconName="devicon-express-original-wordmark" />
           <Techstack iconName="devicon-react-original-wordmark" />
-          <Techstack iconName="devicon-mongodb-plain-wordmark" />
-          <Techstack iconName="devicon-bootstrap-plain-wordmark" />
           <Techstack iconName="devicon-typescript-plain" />
           <Techstack iconName="devicon-wordpress-plain" />
         </Row>
@@ -54,11 +51,14 @@ function About() {
           <strong className="red">Tools</strong> I use
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-        <Techstack iconName="devicon-github-original" />
+          <Techstack iconName="devicon-firebase-plain" />
+          <Techstack iconName="devicon-github-original" />
           <Techstack iconName="cib-visual-studio-code" />
           <Techstack iconName="devicon-npm-original-wordmark" />
           <Techstack iconName="cib-postman" />
+          <Techstack iconName="devicon-bootstrap-plain-wordmark" />
           <Techstack iconName="devicon-yarn-plain" />
+          <Techstack iconName="devicon-mongodb-plain-wordmark" />
           <Techstack iconName="cib-heroku" />
           <Techstack iconName="devicon-git-plain-wordmark" />
         </Row>

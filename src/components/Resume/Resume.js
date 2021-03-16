@@ -6,9 +6,110 @@ import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import pdf from "../../Assets/New New resume.pdf";
 import cv from "../../Assets/New CV.pdf";
+import Progress from './Progress';
+
 
 function Resume() {
- 
+  const languages = [
+    {
+      icon: "devicon-html5-plain",
+      name: "HTML",
+      level: '80'
+    },
+    {
+      icon: "devicon-css3-plain",
+      name: "CSS",
+      level: '60'
+    },
+    {
+      icon: "devicon-react-original-wordmark",
+      name: "React",
+      level: '90'
+    },
+    {
+      icon: "devicon-nodejs-plain-wordmark",
+      name: "Node.js",
+      level: '70'
+    },
+    {
+      icon: "devicon-flutter-plain",
+      name: "Flutter.io",
+      level: '50'
+    },
+    {
+      icon: "devicon-javascript-plain",
+      name: "Javascript",
+      level: '80'
+    },
+    {
+      icon: "devicon-express-original-wordmark",
+      name: "Express.js",
+      level: '70'
+    },
+    {
+      icon: "devicon-typescript-plain",
+      name: "Typescript",
+      level: '30'
+    },
+    {
+      icon: "devicon-wordpress-plain",
+      name: "Wordpress",
+      level: '70'
+    }
+  ]
+
+  const tools = [
+    {
+      icon: "devicon-bootstrap-plain-wordmark",
+      name: "Bootstrap",
+      level: '80'
+    },
+    {
+      icon: "devicon-mongodb-plain-wordmark",
+      name: "MongoDB",
+      level: '80'
+    },
+    {
+      icon: "devicon-firebase-plain",
+      name: "Firebase",
+      level: '60'
+    },
+    {
+      icon: "cib-heroku",
+      name: "Heroku",
+      level: '80'
+    },
+    {
+      icon: "devicon-yarn-plain",
+      name: "Yarn",
+      level: '100'
+    },
+    {
+      icon: "devicon-github-original",
+      name: "Github",
+      level: '90'
+    },
+    {
+      icon: "cib-visual-studio-code",
+      name: "VSC",
+      level: '100'
+    },
+    {
+      icon: "devicon-npm-original-wordmark",
+      name: "NPM",
+      level: '100'
+    },
+    {
+      icon: "cib-postman",
+      name: "Postman",
+      level: '70'
+    },
+    {
+      icon: "devicon-git-plain-wordmark",
+      name: "Git",
+      level: '90'
+    }
+  ]
 
     return (
       <Container fluid className="resume-section">
@@ -85,6 +186,31 @@ function Resume() {
             />
           </Col>
         </Row>
+        <Row className="row">
+        <Col className="col-lg-6 resume-languages">
+            <h5 className="reume-language__heading">
+                Language and Framework
+            </h5>
+            <div className="resume-language__body mt-3">
+                {
+                    languages.map(language =>
+                        <Progress value={language} />
+                    )
+                }
+            </div>
+        </Col>
+        <Col className="col-lg-6 resume-languages">
+            <h5 className="reume-language__heading">
+                Tools and Softwares
+            </h5>
+            <div className="resume-language__body mt-3">
+                {
+                    tools.map(tool => <Progress value={tool} />)
+                }
+            </div>
+        </Col>
+    </Row>
+
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button variant="primary mr-4" href={pdf} target="_blank">
             <i className="fas fa-download">&nbsp;</i>Download Resume

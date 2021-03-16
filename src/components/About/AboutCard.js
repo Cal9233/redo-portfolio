@@ -29,7 +29,7 @@ function AboutCard() {
             </li>
           </ul>
 
-          <p style={{ marginBlockEnd: 0, color: "#c08888"}}>
+          <p style={{ marginBlockEnd: 0, color: "#b2a59f"}}>
             "I fear living a life where I could have accomplished something and didn't."{" "}
           </p>
           <footer className="blockquote-footer">Neil degrasse Tyson</footer>

@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import home from "../../Assets/software.jpg";
+import code from "../../Assets/image2.png";
 import Home2 from "./Home2";
 import Type from "./Type";
 
@@ -28,7 +28,7 @@ function Home() {
             </Col>
 
             <Col md={5} className="image-me" style={{ paddingBottom: 20 }}>
-              <img src={home} alt="home pic" className="img-fluid" />
+              <img src={code} alt="home pic" className="img-fluid" />
             </Col>
           </Row>
         </Container>
