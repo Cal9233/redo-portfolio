@@ -1,14 +1,14 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(2, 52, 89, 0.582),
-    rgba(30, 100, 110, 0.904)
+    rgba(30, 100, 110, 0.904),
+    rgba(2, 52, 89, 0.582)
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(2, 52, 89, 0.678),
-    rgba(30, 100, 110, 0.863)
+    rgba(30, 100, 110, 0.863),
+    rgba(2, 52, 89, 0.678)
   );
 
   --imp-text-color: rgb(178, 165, 159);
@@ -464,7 +464,7 @@ html {
 }
 
 .blockquote-footer {
-  color: #c08888 !important;
+  color: #b2a59f !important;
 }
 /* --------- */
 /* Projects */
@@ -678,4 +678,24 @@ html {
   top: 0;
   background: #fff;
   border: 2px solid #002c2f;
+}
+
+.bar {
+  width: 90%;
+  background-color: #f1f2f3;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.bar__icon {
+  width: 15px;
+  height: 15px;
+}
+
+.bar__wrapper {
+  background-image: linear-gradient(90deg, #00ab08, #4ded30);
+  border-radius: 20px;
+  padding: 4px 14px;
+  color: #fff;
+  font-size: 0.9rem;
 }
